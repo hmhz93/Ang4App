@@ -19,7 +19,8 @@
           <td>{{c.nom}}</td>
           <td>{{c.prenom}}</td>
           <td>{{c.email}}</td>
-
+          <td><a (click)="onEditContact(c.id)" class="clickable">Edit</a></td>
+          <td><a (click)="onDeleteContact(c)" class="clickable">Delete</a></td>
         </tr>
       </table>
 
